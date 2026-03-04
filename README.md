@@ -96,6 +96,58 @@ analytics engineering approach.
 
 ---
 
+## Architecture Overview
+
+```text
+                 ┌─────────────────────────────┐
+                 │   Third-Party Data Source   │
+                 │ (Contract / Pipeline Data)  │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Selenium Authentication   │
+                 │   + API Request Extraction  │
+                 │   (Python)                  │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │      Data Processing        │
+                 │                             │
+                 │  • Field normalization      │
+                 │  • Custom field mapping     │
+                 │  • Data type standardizing  │
+                 │  • Derived metric creation  │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │      Data Validation        │
+                 │                             │
+                 │  • Duplicate detection      │
+                 │  • Missing value checks     │
+                 │  • Business rule validation │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │      Curated Dataset        │
+                 │ (Analysis-Ready Contract    │
+                 │        Data Tables)         │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │     Power BI Dashboards     │
+                 │                             │
+                 │  • Executive reporting      │
+                 │  • Pipeline monitoring      │
+                 │  • Trend & concentration    │
+                 └─────────────────────────────┘
+```
+---
+
 ## Repository structure
 ```text
 contract-data-pipeline/
