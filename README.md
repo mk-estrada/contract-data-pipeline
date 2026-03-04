@@ -155,10 +155,6 @@ contract-data-pipeline/
 │   └── c2p_functions.py        # core pipeline utilities
 ├── internal_example/
 │   └── run_pipeline_REDACTED.py # sanitized runner
-├── dashboards/
-│   └── screenshots/             # sample outputs
-├── docs/
-│   └── architecture.md          # (in process)
 ├── requirements.txt
 └── README.md
 ```
@@ -167,6 +163,7 @@ contract-data-pipeline/
 ---
 
 ## Tech stack
+Public version is intentionally non-runnable; focus is pipeline design + transformation patterns.
 
 **Languages & libraries**
 
