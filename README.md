@@ -97,17 +97,19 @@ analytics engineering approach.
 ---
 
 ## Repository structure
+```text
 contract-data-pipeline/
 ├── src/
-│ └── c2p_functions.py # core pipeline utilities
+│   └── c2p_functions.py        # core pipeline utilities
 ├── internal_example/
-│ └── run_pipeline_REDACTED.py # sanitized runner
+│   └── run_pipeline_REDACTED.py # sanitized runner
 ├── dashboards/
-│ └── screenshots/ # sample outputs
+│   └── screenshots/             # sample outputs
 ├── docs/
-│ └── architecture.md # (in process)
+│   └── architecture.md          # (in process)
 ├── requirements.txt
 └── README.md
+```
 
 
 ---
